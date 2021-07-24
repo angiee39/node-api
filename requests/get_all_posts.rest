@@ -1,0 +1,31 @@
+GET http://localhost:3000/posts
+
+###
+
+POST http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "sample1",
+    "description": "Testing 1 2 3...."
+}
+
+###
+
+GET http://localhost:3000/posts/60faeafa6fc7ea493c8e5943
+
+###
+
+DELETE http://localhost:3000/posts/60fba1d07b21144770419dc6 HTTP/1.1
+
+###
+
+PATCH http://localhost:3000/posts/60faeda76bfc7c4a48cccb09 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "editedTitle",
+    "description": "editedDescription...."
+}
+
+
